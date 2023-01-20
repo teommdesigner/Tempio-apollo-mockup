@@ -1,0 +1,60 @@
+/* Titolo pagina */
+#presentationGlossary {
+  width: 610px;
+}
+
+#presentationGlossary h2 {
+  margin-top: 3.125rem;
+  margin-bottom: 2.5rem;
+}
+
+/* VOCI GLOSSARIO */
+#containerGlossary {
+  margin-top: 4.375rem;
+  width: 930px;
+}
+
+/* Elementi glossaryItems */
+.glossaryItems {
+  width: 100%;
+  padding: 2.5rem 10rem;
+  margin-bottom: 4.375rem;
+  background-color: var(--firstColor);
+  display: flex;
+  flex-direction: column;
+}
+
+.glossaryItems h2 {
+  margin-bottom: 1.25rem;
+}
+
+/* Button per aprire chiudere le voci */
+button.buttonGlossary {
+  width: 100%;
+  border: none;
+  outline: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--firstColor);
+  font-family: var(--textFont);
+  font-size: 20px;
+  font-weight: bold;
+  color: var(--textColor);
+  cursor: pointer;
+}
+
+/* Icona freccia in giù */
+button.buttonGlossary i {
+  font-size: 40px;
+  margin-top: 1.25rem;
+}
+
+/* contenuto della scheda aperta */
+.contentGlossary {
+  margin-top: 3.125rem;
+  overflow: hidden;
+  max-height: 0;
+  transition: max-height 1000ms ease-in-out;
+}

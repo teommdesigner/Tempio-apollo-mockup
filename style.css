@@ -1,0 +1,417 @@
+/* IMPORT OF CSS PAGES */
+@import "./css/styleTempio.css";
+@import "./css/styleGlossario.css";
+@import "./css/styleGallery.css";
+
+/* VARIABILI PER FONT E COLORI */
+:root {
+  --titleFont: "Cardo", serif;
+  --textFont: "Josefin Sans", sans-serif;
+  --firstColor: #ffdd3a;
+  --secondColor: #f2f2f2;
+  --textColor: #030002;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--secondColor);
+}
+
+/* REGOLE GENERALI *******************************************/
+h1,
+h2,
+h3 {
+  font-family: var(--titleFont);
+  font-weight: bold;
+}
+
+h2 {
+  font-size: 30px;
+}
+
+p {
+  font-family: var(--textFont);
+  font-weight: 300;
+}
+
+a {
+  text-decoration: none;
+  color: var(--textColor);
+  font-weight: bold;
+}
+
+strong {
+  font-weight: 600;
+}
+
+.titleCardo {
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+/* Testo normale */
+.normalText {
+  font-size: 20px;
+  line-height: 30px;
+}
+
+.textItalic {
+  font-weight: 600;
+  font-size: 20px;
+  font-style: italic;
+}
+
+.button {
+  padding: 18px 32px;
+  cursor: pointer;
+}
+
+/* REGOLE GENERALI PAGINA TEMPIO E GLOSSARIO */
+
+/* Prima immagine nell accordion */
+img.firstImageAccordion {
+  width: 100%;
+  margin-bottom: 1.875rem;
+}
+
+/* Immagini normali nell'accordion */
+img.cover {
+  width: 100%;
+  margin: 1.875rem 0;
+}
+
+/* Immagine coon didascalia */
+img.withQuotes {
+  margin-bottom: 1.25rem;
+}
+
+/* Titolo dopo paragrafo */
+.titleAfter {
+  margin-top: 2.5rem;
+}
+
+/* Testo separato dall'altro paragrafo da uno spazio bianco */
+.textMarginUp {
+  margin-top: 1.25rem;
+}
+
+/* Titoletti in Bold */
+.littleHeadings {
+  font-weight: bold;
+}
+
+/* Citazioni */
+.quotes {
+  width: 450px;
+  font-weight: 400;
+  font-style: italic;
+  align-self: center;
+}
+
+/* Didascalie */
+.caption {
+  width: 100%;
+  font-weight: 400;
+  font-style: italic;
+  text-align: center;
+}
+
+/* Testo dopo didascalie o citazioni */
+.textAfterQuotes {
+  margin-top: 1.875rem;
+}
+
+/* Classe per i Link nel testo */
+.textLinks {
+  color: var(--firstColor);
+  padding: 0.3125rem;
+  transition: all 300ms ease-in-out;
+}
+.textLinks:hover {
+  background-color: var(--textColor);
+  padding: 0.3125rem;
+  text-decoration: underline;
+  font-style: italic;
+}
+
+/* HEADER ***************************************************/
+header {
+  z-index: 5;
+  position: sticky;
+  top: 0;
+  width: 100%;
+  height: 100px;
+  background-color: var(--firstColor);
+  /* box-shadow: 0px 1px 10px 0px rgba(0, 0, 0, 0.75); */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#headerContainer {
+  width: 570px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header img {
+  width: 15%;
+}
+
+header a {
+  font-family: var(--textFont);
+  font-size: 25px;
+  transition: color 300ms ease;
+}
+header a:hover {
+  color: var(--secondColor);
+}
+
+/* Main Image */
+#mainImage {
+  width: 100%;
+  height: 680px;
+  background-image: url("./Images/Immagine_copertina_Modificato.jpg");
+  background-size: 125%;
+  background-position: bottom -50px center;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#mainImage h1 {
+  width: 930px;
+  font-size: 80px;
+  letter-spacing: 5px;
+  color: var(--secondColor);
+  text-align: center;
+}
+
+/* MAIN ****************************************************/
+main {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#textPresentation {
+  margin-top: 6.25rem;
+  width: 680px;
+}
+
+#textPresentation h2 {
+  font-size: 40px;
+  margin-bottom: 0.5em;
+}
+
+/* Button Scopri Tempio */
+#buttonVisit {
+  margin: 3.8em 0 6.25rem 0;
+  border: 3px solid var(--textColor);
+  transition: all 300ms ease;
+}
+#buttonVisit:hover {
+  background-color: var(--firstColor);
+  border: 3px solid var(--firstColor);
+}
+
+#buttonVisit a {
+  font-size: 25px;
+}
+
+/* GLOSSARIO HOME *******************************************/
+#glossaryHome {
+  width: 930px;
+  background-color: var(--firstColor);
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding-left: 10em;
+}
+
+#textGlossary {
+  margin-right: 2em;
+}
+
+#textGlossary h2 {
+  font-size: 30px;
+}
+
+#textGlossary p {
+  margin-top: 1.25em;
+  line-height: 25px;
+}
+
+/* Bottoni Glossario */
+#containerButtons {
+  display: flex;
+  margin-top: 2.8em;
+}
+
+/* Button Approfondisci */
+#moreInfo {
+  margin-right: 2.5rem;
+  background-color: var(--textColor);
+  transition: all 500ms ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#moreInfo:hover {
+  background-color: var(--secondColor);
+}
+#moreInfo:hover a {
+  color: var(--textColor);
+}
+
+#moreInfo a {
+  color: var(--firstColor);
+}
+
+/* Button Vedi voci */
+#seeItems {
+  background-color: var(--firstColor);
+  border: 3px solid var(--textColor);
+  transition: all 500ms ease;
+}
+#seeItems:hover {
+  background-color: var(--secondColor);
+  border: 3px solid var(--secondColor);
+}
+
+#seeItems a {
+  color: var(--textColor);
+}
+
+#imageGlossary {
+  width: 800px;
+  height: 350px;
+  background-image: url("./Images/Capitello_dorico_2_modificato_home.jpg");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+/* LINK UNESCO *********************************************/
+#containerUnesco {
+  position: relative;
+  margin-top: 6.25rem;
+  width: 930px;
+  display: grid;
+  grid-template-columns: 3fr 3fr 3fr;
+  align-items: center;
+}
+
+/* Text Unesco */
+#textUnesco {
+  position: absolute;
+  width: 600px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 3em 0;
+  background-color: rgba(242, 242, 242, 0.5);
+  border: 3px solid var(--textColor);
+}
+
+#textUnesco h2 {
+  font-size: 40px;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  text-align: center;
+}
+
+/* Background Images */
+.imageUnesco {
+  height: 283px;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.imageUnesco#img1 {
+  background-image: url("./Images/UnescoImages/PatrimoniUNESCO_1_modificato.jpg");
+  background-size: 160%;
+  background-position: -120px center;
+}
+
+.imageUnesco#img2 {
+  background-image: url("./Images/UnescoImages/PatrimoniUNESCO_2_modificato.jpg");
+  background-size: 150%;
+  background-position: -120px center;
+}
+
+.imageUnesco#img3 {
+  background-image: url("./Images/UnescoImages/PatrimoniUNESCO_3_modificato.jpg");
+  background-position: -10px center;
+}
+
+/* FOOTER **************************************************/
+footer {
+  margin-top: 6.25rem;
+  background-color: var(--textColor);
+  width: 100%;
+  height: 350px;
+  padding: 3em 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#footerContainer {
+  width: 865px;
+  height: 200px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+/* Footer Items */
+.footerItems {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.footerItems h3 {
+  font-family: var(--textFont);
+  font-weight: bold;
+  text-transform: uppercase;
+  line-height: 30px;
+  color: var(--firstColor);
+}
+
+.footerItems a {
+  color: var(--secondColor);
+  font-size: 16px;
+  transition: color 300ms ease;
+}
+
+.footerItems a:hover {
+  color: var(--firstColor);
+}
+
+.footerItems a i {
+  font-size: 40px;
+}
+
+/* Collegamenti esterni */
+#externalLinks a {
+  display: block;
+}
+
+#externalLinks .linkMargin {
+  margin-bottom: 0.62em;
+}
+
+/* Social */
+#icons a i {
+  margin-right: 1.5rem;
+}

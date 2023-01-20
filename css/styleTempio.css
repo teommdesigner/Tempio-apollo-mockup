@@ -1,0 +1,122 @@
+/* PRESENTAZIONE TEMPIO ************************************/
+#templePresentation {
+  margin-top: 3.12em;
+  width: 930px;
+  display: flex;
+}
+
+/* Testo presentazione */
+#textTemple {
+  width: 50%;
+  margin-right: 1.2em;
+}
+
+#textTemple h2 {
+  font-size: 30px;
+  margin-bottom: 1.25rem;
+}
+
+#textTemple p.textItalic {
+  margin-bottom: 2.5rem;
+}
+
+/* Immagine presentazione */
+#imgPresentation {
+  width: 450px;
+  height: 450px;
+  background-image: url("../Images/TempleImages/Tempio_fuori_4_modificato.jpg");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+/* ACCORDIONS ***********************************************/
+
+/* centratura dei accordions */
+section#accordionSection {
+  margin-top: 6.25rem;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+#container {
+  width: 610px;
+}
+
+.accordionItem {
+  border-top: 2px solid var(--textColor);
+  border-bottom: 2px solid var(--textColor);
+  padding: 0.6rem;
+  padding-bottom: 1em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Metto spazio tra un accordion e l'altro */
+.accordionBottom {
+  margin-bottom: 2.5em;
+}
+
+/* Bottone da cliccare */
+button.accordionLink {
+  position: sticky;
+  top: 100px;
+  width: 100%;
+  padding: 1rem 0;
+  border: none;
+  outline: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--secondColor);
+  font-family: var(--titleFont);
+  font-size: 30px;
+  font-weight: bold;
+  color: var(--textColor);
+  letter-spacing: 2px;
+  cursor: pointer;
+}
+
+button.accordionLink i {
+  color: var(--textColor);
+}
+
+/* Content del Accordion */
+.content {
+  overflow: hidden;
+  max-height: 0;
+  width: 100%;
+  padding: 0 0.5rem;
+  display: flex;
+  flex-direction: column;
+  transition: max-height 1000ms ease-in-out;
+}
+
+.content h2 {
+  font-family: var(--textFont);
+  margin-bottom: 1.25rem;
+}
+
+/* INFO GENERALI  */
+.infoHeritage h2 {
+  font-size: 20px;
+  margin-bottom: 1.875rem;
+}
+
+.rowInfo {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+#generalInfo {
+  margin-top: 0;
+  margin-bottom: 1.875rem;
+}
+
+/* MAPPA GOOGLE */
+#maps {
+  margin-top: 4.37rem;
+}
